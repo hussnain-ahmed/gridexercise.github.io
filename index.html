@@ -10,88 +10,66 @@
             background-color: black;
         }
 
-        .wrapper {
-            padding: 5px;
-            background-color: white;
-            margin: 0 auto;
-            /* border: 2px solid white; */
-            display: grid;
-            gap: 5px;
-            grid-template-columns: 4;
-            grid-template-rows: 2;
-            grid-template-areas:
-                'box1    box2     box3     box4'
-                'box5    box6     box7     box8';
+        h1 {
+            text-align: center;
+            font-weight: bolder;
+            font-size: xx-large;
+            color: white;
         }
 
-        .box {}
+        .wrapper {
+            margin: auto;
+            background-color: white;
+            border: 2px solid white;
+        }
 
-        .box img:hover {
+        .imgboxes {
+            display: grid;
+            gap: 2px;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+        }
+
+        img {
+            width: 100%;
+        }
+
+        img:hover {
             opacity: 0.5;
             cursor: pointer;
-        }
-
-        .box1 {
-            grid-area: box1;
-        }
-
-        .box2 {
-            grid-area: box2;
-        }
-
-        .box3 {
-            grid-area: box3;
-        }
-
-        .box4 {
-            grid-area: box4;
-        }
-
-        .box5 {
-            grid-area: box5;
-        }
-
-        .box6 {
-            grid-area: box6;
-        }
-
-        .box7 {
-            grid-area: box7;
-        }
-
-        .box8 {
-            grid-area: box8;
         }
     </style>
 </head>
 
 <body>
+    <h1>
+        Gallery Example
+    </h1>
     <div class="wrapper">
-        <div class="box box1">
+        <div class="imgboxes box">
             <img src="https://i.picsum.photos/id/75/200/200.jpg?hmac=iXY_MolS8m8RDrh8BblWo-XCw9TRR_YvkeuRIko1Q1A"
                 alt="">
-        </div>
-        <div class="box box2">
+
             <img src="https://i.picsum.photos/id/1075/200/200.jpg?hmac=a9PcCsXBonPZ7LCLyWX6dHM1XGbcojML0qhnq-Ee4a4"
                 alt="">
-        </div>
-        <div class="box box3">
-            <img src="https://picsum.photos/200" alt="">
-        </div>
-        <div class="box box4">
-            <img src="https://picsum.photos/200" alt="">
-        </div>
-        <div class="box box5">
-            <img src="https://picsum.photos/200" alt="">
-        </div>
-        <div class="box box6">
-            <img src="https://picsum.photos/200" alt="">
-        </div>
-        <div class="box box7">
-            <img src="https://picsum.photos/200" alt="">
-        </div>
-        <div class="box box8">
-            <img src="https://picsum.photos/200" alt="">
+
+            <img src="https://i.picsum.photos/id/53/200/200.jpg?hmac=NvXWlWpaKnDMb_phNyfwXppFuuNz0jK69wUnSFYQ6Ww"
+                alt="">
+
+            <img src="https://i.picsum.photos/id/351/200/200.jpg?hmac=E2C8OwTRNgbEan5RzifMH73ENtpcsHSr45mGFQk5mPU"
+                alt="">
+
+            <img src="https://i.picsum.photos/id/263/200/200.jpg?hmac=M6XV5nVFFEhu9J37dng8WnB3jDTEi3AtqZm7E27mAaY"
+                alt="">
+
+            <img src="https://i.picsum.photos/id/1005/200/200.jpg?hmac=TlSxs8p2lqA8VkV-Kpg7DKnp8BkwK9UDBHrU2UegLzI"
+                alt="">
+
+            <img src="https://i.picsum.photos/id/62/200/200.jpg?hmac=IdjAu94sGce82DBYTMbOYzXr7kup1tYqdr0bHkRDWUs"
+                alt="">
+
+            <img src="https://i.picsum.photos/id/498/200/200.jpg?hmac=qTtPQUlxKQaUfu86iZS07VWbb5NrV6vbPnPq8SM2WC8"
+                alt="">
         </div>
     </div>
 </body>
