@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <style>
+        body {
+            background-color: black;
+        }
+
+        .wrapper {
+            padding: 5px;
+            background-color: white;
+            margin: 0 auto;
+            /* border: 2px solid white; */
+            display: grid;
+            gap: 5px;
+            grid-template-columns: 4;
+            grid-template-rows: 2;
+            grid-template-areas:
+                'box1    box2     box3     box4'
+                'box5    box6     box7     box8';
+        }
+
+        .box {}
+
+        .box img:hover {
+            opacity: 0.5;
+            cursor: pointer;
+        }
+
+        .box1 {
+            grid-area: box1;
+        }
+
+        .box2 {
+            grid-area: box2;
+        }
+
+        .box3 {
+            grid-area: box3;
+        }
+
+        .box4 {
+            grid-area: box4;
+        }
+
+        .box5 {
+            grid-area: box5;
+        }
+
+        .box6 {
+            grid-area: box6;
+        }
+
+        .box7 {
+            grid-area: box7;
+        }
+
+        .box8 {
+            grid-area: box8;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="box box1">
+            <img src="https://i.picsum.photos/id/75/200/200.jpg?hmac=iXY_MolS8m8RDrh8BblWo-XCw9TRR_YvkeuRIko1Q1A"
+                alt="">
+        </div>
+        <div class="box box2">
+            <img src="https://i.picsum.photos/id/1075/200/200.jpg?hmac=a9PcCsXBonPZ7LCLyWX6dHM1XGbcojML0qhnq-Ee4a4"
+                alt="">
+        </div>
+        <div class="box box3">
+            <img src="https://picsum.photos/200" alt="">
+        </div>
+        <div class="box box4">
+            <img src="https://picsum.photos/200" alt="">
+        </div>
+        <div class="box box5">
+            <img src="https://picsum.photos/200" alt="">
+        </div>
+        <div class="box box6">
+            <img src="https://picsum.photos/200" alt="">
+        </div>
+        <div class="box box7">
+            <img src="https://picsum.photos/200" alt="">
+        </div>
+        <div class="box box8">
+            <img src="https://picsum.photos/200" alt="">
+        </div>
+    </div>
+</body>
+
+</html>
